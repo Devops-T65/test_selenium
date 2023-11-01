@@ -3,7 +3,7 @@ pipeline {
     stages{
         stage('Checkout'){
             steps{
-                git branch:'main',credentialsld:'Github-cred',url:'https://github.com/Devops-T65/test_selenium.git'
+                git branch:'main',credentialsId:'Github-cred',url:'https://github.com/Devops-T65/test_selenium.git'
             }
 
         }
