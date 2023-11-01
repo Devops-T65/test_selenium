@@ -15,6 +15,7 @@ pipeline {
             }
             steps{
                 echo "---------Executing Unit Test Using Selenium-----------"
+                sh "apt-get install python3-pip"
                 sh "pip install -r requirements.txt"
                 sh "python -m unittest"
             }
