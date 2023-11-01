@@ -20,7 +20,7 @@ pipeline {
             }
             post{
                 success{
-                    git branch:"Stage", credentialsId: "dev-pass , url: "https://github.com"
+                    git branch:"main", credentialsId: "Github-cred" , url: "https://github.com"
                     sh "git merge main"
                 }
             }
